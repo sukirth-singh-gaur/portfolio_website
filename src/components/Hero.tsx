@@ -6,8 +6,7 @@ import {
   Github,
   Linkedin,
   Mail,
-  Twitter, // Added Twitter icon
-  Terminal as TerminalIcon,
+  Twitter,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -33,7 +32,11 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
-          <Button className="font-serif font-semibold bg-cyan-600 hover:bg-cyan-700 text-white">
+          {/* Fixed Button Syntax */}
+          <Button 
+            className="font-serif font-semibold bg-cyan-600 hover:bg-cyan-700 text-white"
+            onClick={() => window.open("/Sukirth_Singh_Gaur.pdf", "_blank")}
+          >
             <Download className="mr-2 h-4 w-4" /> Download CV
           </Button>
 
@@ -54,36 +57,37 @@ export default function Hero() {
               className="border-neutral-700 text-neutral-400 hover:bg-neutral-800 hover:text-white"
               asChild
             >
-              <a href="https://linkedin.com/in/sukirth-singh-gaur" target="_blank" aria-label="LinkedIn">
+              <a
+                href="https://linkedin.com/in/sukirth-singh-gaur"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
                 <Linkedin className="h-5 w-5" />
               </a>
             </Button>
-            {/* New X (Twitter) Link */}
             <Button
               variant="outline"
               size="icon"
               className="border-neutral-700 text-neutral-400 hover:bg-neutral-800 hover:text-white"
               asChild
             >
-              <a href="https://x.com/your-username" target="_blank" aria-label="X (Twitter)">
+              <a href="https://x.com/SukirthSGaur" target="_blank" aria-label="X (Twitter)">
                 <Twitter className="h-5 w-5" />
               </a>
             </Button>
-            <Button
-              variant="outline"
-              size="icon"
-              className="border-neutral-700 text-neutral-400 hover:bg-neutral-800 hover:text-white"
-              asChild
-            >
-              <a href="mailto:your-email@example.com" aria-label="Email">
-                <Mail className="h-5 w-5" />
-              </a>
-            </Button>
+<Button
+  variant="outline"
+  className="border-neutral-700 text-neutral-400 hover:bg-neutral-800 hover:text-white"
+  asChild
+>
+  <a href="mailto:sukirthsinghgaur@yahoo.in" aria-label="Email">
+    <Mail/>sukirthsinghgaur@yahoo.in
+  </a>
+</Button>
           </div>
         </div>
       </motion.div>
 
-      {/* Profile Image Container */}
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}

@@ -9,19 +9,16 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-neutral-950 text-neutral-200 selection:bg-cyan-500/30 overflow-x-hidden">
       <motion.div 
-        // 1. Start state: Heavy blur and slightly shifted down
         initial={{ 
           opacity: 0, 
           filter: "blur(20px)", 
           y: 20 
         }}
-        // 2. End state: Crystal clear and at original position
         animate={{
           opacity: 1,
           y: 0,
           filter: "blur(0px)",
         }}
-        // 3. Consolidated Transition (No conflicts)
         transition={{ 
           duration: 0.6, 
           ease: "easeOut",
