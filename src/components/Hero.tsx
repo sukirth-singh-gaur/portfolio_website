@@ -6,24 +6,22 @@ import {
   Github,
   Linkedin,
   Mail,
+  Twitter, // Added Twitter icon
   Terminal as TerminalIcon,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    /* Added items-center to align text and image vertically, and justify-between for spacing */
-    <section className="flex flex-col md:flex-row items-center justify-between gap-2 py-10">
-      <motion.div
-        className="flex-1 space-y-6 text-center md:text-left"
-      >
+    <section className="flex flex-col md:flex-row items-center justify-between gap-12 py-10">
+      <motion.div className="flex-1 space-y-6 text-center md:text-left">
         <div className="space-y-2">
           <h1 className="text-white font-serif font-bold text-5xl tracking-tight">
             Hi, I&apos;m <span className="text-cyan-500">Sukirth</span>
           </h1>
         </div>
 
-        <p className="font-serif text-neutral-300 max-w-max leading-relaxed text-lg">
+        <p className="font-serif text-neutral-300 max-w-lg leading-relaxed text-lg mx-auto md:mx-0">
           I build software that’s practical, scalable, and user-focused. With
           experience across full-stack development, I enjoy designing APIs,
           working with modern frontend frameworks, and deploying reliable
@@ -46,7 +44,7 @@ export default function Hero() {
               className="border-neutral-700 text-neutral-400 hover:bg-neutral-800 hover:text-white"
               asChild
             >
-              <a href="https://github.com" target="_blank" aria-label="GitHub">
+              <a href="https://github.com/sukirth-singh-gaur" target="_blank" aria-label="GitHub">
                 <Github className="h-5 w-5" />
               </a>
             </Button>
@@ -56,12 +54,19 @@ export default function Hero() {
               className="border-neutral-700 text-neutral-400 hover:bg-neutral-800 hover:text-white"
               asChild
             >
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                aria-label="LinkedIn"
-              >
+              <a href="https://linkedin.com/in/sukirth-singh-gaur" target="_blank" aria-label="LinkedIn">
                 <Linkedin className="h-5 w-5" />
+              </a>
+            </Button>
+            {/* New X (Twitter) Link */}
+            <Button
+              variant="outline"
+              size="icon"
+              className="border-neutral-700 text-neutral-400 hover:bg-neutral-800 hover:text-white"
+              asChild
+            >
+              <a href="https://x.com/your-username" target="_blank" aria-label="X (Twitter)">
+                <Twitter className="h-5 w-5" />
               </a>
             </Button>
             <Button
@@ -70,7 +75,7 @@ export default function Hero() {
               className="border-neutral-700 text-neutral-400 hover:bg-neutral-800 hover:text-white"
               asChild
             >
-              <a href="mailto:hello@example.com" aria-label="Email">
+              <a href="mailto:your-email@example.com" aria-label="Email">
                 <Mail className="h-5 w-5" />
               </a>
             </Button>
@@ -83,10 +88,9 @@ export default function Hero() {
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.2 }}
-        /* Fixed: Using standard Tailwind sizing (w-64 h-64) and rlative positioning */
         className="relative w-64 h-64 md:w-80 md:h-80 flex-shrink-0"
       >
-        <div className="w-full h-full rounded-full overflow-hidden relative">
+        <div className="w-full h-full rounded-full overflow-hidden relative ring-4 ring-neutral-800">
           <Image
             src="/glasses.png"
             alt="Sukirth's Profile"
