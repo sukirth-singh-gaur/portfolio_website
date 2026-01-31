@@ -96,7 +96,7 @@ export default function Hero() {
       >
         <div className="w-full h-full rounded-full overflow-hidden relative ring-4 ring-neutral-800">
           <Image
-            src="/glasses.png"
+            src="/profile.jpeg"
             alt="Sukirth's Profile"
             fill
             priority
