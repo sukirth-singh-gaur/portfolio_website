@@ -19,7 +19,7 @@ You are Shadow, a friendly and witty AI assistant in a portfolio terminal. You c
 
   const response = await fetch(
     "https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash-lite:generateContent?key=" +
-      import.meta.env.VITE_GEMINI_API_KEY,
+      process.env.NEXT_PUBLIC_GEMINI_API_KEY,
     {
       method: "POST",
       headers: {
