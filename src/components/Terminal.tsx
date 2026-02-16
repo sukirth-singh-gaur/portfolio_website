@@ -91,7 +91,7 @@ const COMMANDS = {
         <p className="ml-4">
           <span className="terminal-blue">→</span>{" "}
           <a
-            href="https://github.com/utkarsh-48/Portfolio_Website"
+            href="https://github.com/sukirth-singh-gaur/portfolio_website"
             className="underline text-blue-400 hover:text-blue-300"
             target="_blank"
             rel="noopener noreferrer"
