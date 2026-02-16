@@ -1,0 +1,27 @@
+{
+  "name": "Sukirth Singh Gaur",
+  "location": "India",
+  "education": "B-Tech student",
+  "focus": ["Backend", "Devops", "DSA", "Full Stack Development"],
+  "hobbies": ["Bike rides","Gaming", "Reading", "Reseaching new topics"],
+  "projects": [
+    {
+      "name": "Portfolio Website",
+      "description": "This site itself — built to feel like a real terminal",
+      "tech": ["React", "TypeScript", "Tailwind CSS"],
+      "url": "https://github.com/utkarsh-48/Portfolio_Website"
+    },
+    {
+      "name": "Bloggit",
+      "description": "A Blogging Platform With LLM based SpellChecks",
+      "tech": ["Python"],
+      "url": "https://github.com/utkarsh-48/ecommerce-cart-python"
+    }
+    
+  ],
+  "contact": {
+    "github": "https://github.com/utkarsh-48",
+    "linkedin": "https://www.linkedin.com/in/utkarsh-krishna-1a0210328/",
+    "email": "utkarshthakur2602@gmail.com"
+  }
+}

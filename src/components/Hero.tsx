@@ -20,7 +20,7 @@ export default function Hero() {
           </h1>
         </div>
 
-        <p className="font-serif text-neutral-300 max-w-lg leading-relaxed text-lg mx-auto md:mx-0">
+        <p className="font-serif text-neutral-100 max-w-lg leading-relaxed text-lg mx-auto md:mx-0">
           I build software that’s practical, scalable, and user-focused. With
           experience across full-stack development, I enjoy designing APIs,
           working with modern frontend frameworks, and deploying reliable
@@ -44,7 +44,7 @@ export default function Hero() {
             <Button
               variant="outline"
               size="icon"
-              className="border-neutral-700 text-neutral-400 hover:bg-neutral-800 hover:text-white"
+              className="border-neutral-700 bg-transparent text-neutral-100 hover:bg-neutral-800 hover:text-white"
               asChild
             >
               <a href="https://github.com/sukirth-singh-gaur" target="_blank" aria-label="GitHub">
@@ -54,7 +54,7 @@ export default function Hero() {
             <Button
               variant="outline"
               size="icon"
-              className="border-neutral-700 text-neutral-400 hover:bg-neutral-800 hover:text-white"
+              className="border-neutral-700 bg-transparent text-neutral-100 hover:bg-neutral-800 hover:text-white"
               asChild
             >
               <a
@@ -68,7 +68,7 @@ export default function Hero() {
             <Button
               variant="outline"
               size="icon"
-              className="border-neutral-700 text-neutral-400 hover:bg-neutral-800 hover:text-white"
+              className="border-neutral-700 bg-transparent text-neutral-100 hover:bg-neutral-800 hover:text-white"
               asChild
             >
               <a href="https://x.com/SukirthSGaur" target="_blank" aria-label="X (Twitter)">
@@ -77,7 +77,7 @@ export default function Hero() {
             </Button>
 <Button
   variant="outline"
-  className="border-neutral-700 text-neutral-400 hover:bg-neutral-800 hover:text-white"
+  className="border-neutral-700 text-neutral-100 bg-transparent hover:bg-neutral-800 hover:text-white"
   asChild
 >
   <a href="mailto:sukirthsinghgaur@yahoo.in" aria-label="Email">
@@ -94,7 +94,7 @@ export default function Hero() {
         transition={{ delay: 0.2 }}
         className="relative w-64 h-64 md:w-80 md:h-80 flex-shrink-0"
       >
-        <div className="w-full h-full rounded-full overflow-hidden relative ring-4 ring-neutral-800">
+        <div className="w-full h-full rounded-full overflow-hidden relative ring-4 ring-transparent">
           <Image
             src="/profile.jpeg"
             alt="Sukirth's Profile"
