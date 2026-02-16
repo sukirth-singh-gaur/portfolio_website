@@ -96,7 +96,7 @@ const COMMANDS = {
             target="_blank"
             rel="noopener noreferrer"
           >
-            github.com/utkarsh-48/terminal-portfolio
+            https://github.com/sukirth-singh-gaur/portfolio_website
           </a>
         </p>
       </div>
