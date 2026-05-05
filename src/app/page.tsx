@@ -7,14 +7,12 @@ import TechStack from '@/components/Techstack';
 import { Separator } from '@/components/ui/separator';
 import { Terminal } from '@/components/Terminal';
 import { Terminal as TerminalIcon, Layout } from "lucide-react";
-import DitherBackground from "@/components/DitherBackground";
 
 export default function Home() {
   const [showTerminal, setShowTerminal] = useState(false);
 
   return (
-    <main className="min-h-screen bg-transparent text-neutral-200 selection:bg-cyan-500/30 overflow-x-hidden relative">
-      <DitherBackground />
+    <main className="min-h-screen bg-black text-neutral-200 selection:bg-cyan-500/30 overflow-x-hidden relative">
       {/* Floating Toggle Button */}
       <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-[100]">
         <motion.button
